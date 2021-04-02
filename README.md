@@ -27,3 +27,5 @@ https://www.jeju.go.kr/culture/dialect/dictionary.htm 제주도 방언 사전
 http://ebook.jb.go.kr/Viewer/ZPIB29K77MS9 전라북도 방언 사전
 
 http://jeonlado.com/v3/dic.html 전라도 사투리 사전
+
+http://kkma.snu.ac.kr/documents/index.jsp?doc=algorithm 한글 분석 알고리즘
