@@ -18,4 +18,7 @@
 
 ## 참고 자료
 
-https://blog.naver.com/nabilera1/222282940672 파이썬으로 형태소 
+https://blog.naver.com/nabilera1/222282940672 파이썬으로 형태소 분석
+
+https://corpus.korean.go.kr/ 국립국어원 말뭉치 데이터
+
