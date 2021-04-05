@@ -18,6 +18,24 @@
 
 ## 참고 자료
 
+### 키워드
+
+유사도 측정
+
+사투리 '번역'은 생성기술(Natural language generation, NLG)/ 기계번역(Machine translation) 에 속하는 것
+
+논문 or 오픈 소스를 찾기
+
+### American English to British English 관련
+
+https://www.translatebritish.com/reverse.php
+
+https://www.infoenglish.net/american-to-british-english/
+
+https://gotranscript.com/translation-services/american-to-british
+
+### 한국 사투리 번역 관련
+
 https://blog.naver.com/nabilera1/222282940672 파이썬으로 형태소 분석
 
 https://excelsior-cjh.tistory.com/62?category=928322 nltk 자연어 수집에 필요한 library
