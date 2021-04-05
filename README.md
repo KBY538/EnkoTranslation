@@ -34,6 +34,8 @@ https://www.infoenglish.net/american-to-british-english/
 
 https://gotranscript.com/translation-services/american-to-british
 
+https://www.nature.com/articles/s41467-020-18073-9 딥러닝을 이용한 기계번역 
+
 ### 한국 사투리 번역 관련
 
 https://blog.naver.com/nabilera1/222282940672 파이썬으로 형태소 분석
