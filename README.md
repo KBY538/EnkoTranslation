@@ -20,6 +20,8 @@
 
 https://blog.naver.com/nabilera1/222282940672 파이썬으로 형태소 분석
 
+https://excelsior-cjh.tistory.com/62?category=928322 nltk
+
 https://corpus.korean.go.kr/ 국립국어원 말뭉치 데이터
 
 https://www.jeju.go.kr/culture/dialect/dictionary.htm 제주도 방언 사전
