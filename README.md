@@ -20,7 +20,7 @@
 
 https://blog.naver.com/nabilera1/222282940672 파이썬으로 형태소 분석
 
-https://excelsior-cjh.tistory.com/62?category=928322 nltk
+https://excelsior-cjh.tistory.com/62?category=928322 nltk 자연어 수집에 필요한 library
 
 https://corpus.korean.go.kr/ 국립국어원 말뭉치 데이터
 
