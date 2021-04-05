@@ -22,6 +22,8 @@ https://blog.naver.com/nabilera1/222282940672 파이썬으로 형태소 분석
 
 https://excelsior-cjh.tistory.com/62?category=928322 nltk 자연어 수집에 필요한 library
 
+https://www.ciokorea.com/news/187313 자연어 처리에 필요한 library 추천!
+
 https://corpus.korean.go.kr/ 국립국어원 말뭉치 데이터
 
 https://www.jeju.go.kr/culture/dialect/dictionary.htm 제주도 방언 사전
