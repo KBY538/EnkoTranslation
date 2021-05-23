@@ -1,9 +1,5 @@
-import sys
 import json
-import datetime
 import requests
-
-import report
 
 def gSearch(keyword, api_key, api_host):
 
@@ -18,7 +14,7 @@ def gSearch(keyword, api_key, api_host):
     res = requests.request("GET", url, headers=headers)
 
     if(200 == res.status_code):
-        return report.reports(json.loads(res.text))
+        return json.loads(res.text)
 
     else:
-        return None
+        print("Error Code:" + res.status_code)

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EN&KO Translation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bird.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="kr-input">
+      <h1>En&Ko Translation</h1>
+      <div class="image_section">
+        <div class="house_section">
+          <div class="house">
+            <img src="{{ url_for('static', filename='images/house/day.png') }}">
+            <div class="blue_p_section">
+              <div class="blue_p">
+                <img src="{{ url_for('static', filename='images/bluep/feet.png') }}">
+                <div class="stick">
+                  <img src="{{ url_for('static', filename='images/bluep/stick.png') }}">
+                </div>
+                <div class="pbody">
+                  <img src="{{ url_for('static', filename='images/bluep/body.png') }}">
+                  <div class="head">
+                    <img src="{{ url_for('static', filename='images/bluep/head.png') }}">
+                    <div class="face">
+                      <img src="{{ url_for('static', filename='images/bluep/face.png') }}">
+                    </div>
+                  </div>
+                  <div class="wing1">
+                    <img src="{{ url_for('static', filename='images/bluep/wing1.png') }}">
+                  </div>
+                  <div class="wing2">
+                    <img src="{{ url_for('static', filename='images/bluep/wing2.png') }}">
+                  </div>
+                  <div class="tail">
+                    <img src="{{ url_for('static', filename='images/bluep/tail.png') }}">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yellow_p">
+              <img src="{{ url_for('static', filename='images/yellowp/body.png') }}">
+              <div class="yellow_head">
+                <img src="{{ url_for('static', filename='images/yellowp/head.png') }}">
+                <div class="yellow_face">
+                  <img src="{{ url_for('static', filename='images/yellowp/face.png') }}">
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <img src="{{ url_for('static', filename='images/house/back.png') }}">
+            </div>
+          </div>
+        </div>
+      </div>
+      <form action="./kr_input" method="post">
+        <div class="form-group">
+          <input type="text" id="keyword" name="kr_text" required>
+            <label for="keyword">한글 검색어를 입력해주세요.</label>
+          <span class="btn-area">
+            <button id="button" type="submit">🔍</button>
+          </span>
+        </div>
+      </form>
+    </section>
+    <script>
+      let btn = $('#button');
+      $(btn).on('click', function(){
+        $('.yellow_p').addClass('show');
+      });
+    </script>
+
+    {% if data %}
+      <div id="result">
+        {% for k, v in data.items() %}<div class="box{{loop.index}}" value="{{k}}">v</div>{% endfor%}
+      </div>
+    {% endif %}
+
+  </body>
+</html>

@@ -1,7 +1,6 @@
 from ibm_watson import LanguageTranslatorV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
 from ibm_watson import ApiException
-import json
 import urllib3
 import requests
 from urllib3.exceptions import InsecureRequestWarning
