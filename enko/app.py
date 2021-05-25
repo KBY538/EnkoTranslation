@@ -7,16 +7,16 @@ import report
 app = Flask(__name__)
 
 # ibm translation
-ibm_api_key = 'piprDDbxjW3UAH4cX5XhKLrXRbyn0ymQIk5nblaji8Pf' # ibm api key 값
-ibm_api_url = 'https://api.kr-seo.language-translator.watson.cloud.ibm.com/instances/5d1803ac-0d6e-431d-9d70-ce28b26c0822'
+ibm_api_key = '' # ibm api key 값
+ibm_api_url = ''
 
 # naver translation
-naver_api_id = 'k78Y1KgZUNHXRkkM_VzF' # 개발자센터에서 발급받은 Client ID 값
-naver_api_secret = 'WgmJw72QSr' # 개발자센터에서 발급받은 Client Secret 값
+naver_api_id = '' # 개발자센터에서 발급받은 Client ID 값
+naver_api_secret = '' # 개발자센터에서 발급받은 Client Secret 값
 
 # google search
-google_api_host = "google-search3.p.rapidapi.com"
-google_api_key  = "7367b7df89mshcd92f1e431d8258p17ce0fjsn140a51aa3b55" # RAPIDAPI key 값
+google_api_host = ""
+google_api_key  = "" # RAPIDAPI key 값
 
 @app.route('/')
 def index():
