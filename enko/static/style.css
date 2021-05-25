@@ -4,41 +4,51 @@ body {
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
+    background-image: url("../static/images/background/bg.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 
-.kr-input {position: relative; z-index: 2; justify-content: center; align-items: center;}
+.kr-input {position: absolute; z-index: 2; justify-content: center; align-items: center; margin-top: 9%;}
 .kr-input h1{
     font-size: 50px;
-    background-image: linear-gradient(90deg, red, orange, yellow, green, navy, purple);
-    background-clip: initial;
+    background-image: linear-gradient(180deg, rgb(163, 132, 120), rgb(61, 45, 37));
+    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     text-align: center;
-    margin-top: 25%;
+}
+.change1{
+    margin-top: 3%;
 }
 
 .form-group {width: 60%; margin-bottom: 25%; position: relative; text-align: center;}
 .form-group:first-child{margin-top: 0; margin-left: 20%}
 .form-group input{
     width: 100%;
-    padding: 5% 1% 1%;
+    padding: 5% 5% 1%;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #999;
     font-size: 18px; color: rgb(0, 0, 0);
     text-align: center;
     outline: none;
+    z-index: 99 !important;
 }
 .form-group label {
     position: relative;
     text-align: center;
     font-size: 6px; color: #999;
 }
+.change2 {
+    margin-bottom: 8%;
+}
 
-.btn-area {top: -5px; margin-left: 30px; position: absolute;}
+.btn-area {top: 7px; margin-left: 36px; position: absolute;}
 .btn-area button {
-    width: 40px; height: 40px;
+    width: 30px; height: 30px;
     font-size: 20px;
     border-radius: 25px;
     background: rgb(255, 255, 255, .4);
@@ -46,9 +56,110 @@ body {
     cursor: pointer;
 }
 
+.image_section{position: relative; width: 250px; height: 300px; margin-top: 9%; left: 26%}
+.change3{
+    margin-top: 48%;
+}
 
-.description {
-    margin-top: 20px;
-    font-size: 12px; color: black;
+.search-lang {
+    position: sticky;
+    background-color: rgba(231, 197, 205, 0.7);
+    border-radius: 5px;
+}
+
+.result-container {
+    overflow: hidden;
+    -webkit-display:flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    top: -12%;
+    left: -118%;
+    height: 700px;
+    width: 1500px;
+    background-size: cover;
+    position: absolute;
+    align-items: center;
+    animation: overlay 1s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes overlay {
+    0% { transform: scale(0); opacity: 0; }
+    100%   { transform: scale(0.9); opacity: 1;}
+ }
+
+.result-area1 {
+    display: flex;
+    height: 62%;
+    width: 40%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+    background-image: url("../static/images/background/kr_area.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.result-area2 {
+    display: flex;
+    height: 62%;
+    width: 40%;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6%;
+    background-image: url("../static/images/background/en_area.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.result-item {
+    height: 50%;
+    width: 82%;
+    margin-bottom: 18%;
+    margin-left: 1%;
+    padding: 1% 1% 0% 0%;
+    overflow-y: scroll;
     text-align: center;
+    z-index: 99 !important;
+}
+.result-item a{
+    font: bold;
+}
+
+.go-home {
+    position: fixed;
+    z-index: 99 !important;
+    top: 90%;
+    left: 93%;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.furtherlink-kr {
+    position: absolute;
+    top: 61.5%;
+    left: 4%;
+    padding: 3px;
+    color: rgb(40, 48, 42);
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
+    direction:rtl;
+}
+
+.furtherlink-en {
+    position: absolute;
+    top: 61.5%;
+    left: 89%;
+    padding: 3px;
+    color: rgb(40, 48, 42);
+    font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-decoration: none;
 }

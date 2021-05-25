@@ -45,22 +45,20 @@ def kr_input():
 
     if kr_result is not None:
         results[kr_text] = kr_result
+    else:
+        results[kr_text] = '검색 결과가 없습니다.'
     
     if en_result is not None:
         results[en_text] = en_result
+    else:
+        results[en_text] = '검색 결과가 없습니다.'
     
-    finalResult = ''
-    for key, value in results.items():
-        finalResult = finalResult + '<h1 class="text-center">%s에 대한 검색 결과</h1></br>%s</br>' %(key, value)
+    result1 = '<div class="result-area1"><div class="result-item"><h2 class="search-lang">%s에 대한 검색 결과</h2></br>%s</br></div><div><a class="furtherlink-kr" href="https://www.google.com/search?q=%s">구글에서 더 보기</a></div></div>' %(kr_text, results[kr_text],kr_text)
+    result2 = '<div class="result-area2"><div class="result-item"><h2 class="search-lang">%s에 대한 검색 결과</h2></br>%s</br></div><div><a class="furtherlink-en" href="https://www.google.com/search?q=%s">구글에서 더 보기</a></div></div>' %(en_text, results[en_text],en_text)
 
-    if len(finalResult) <= 0:
-        finalResult = '검색 결과가 없습니다.'
-    
-    finalResult = finalResult + '<a href="/">Back home</a>'
+    finalResult = '<div class="result-container">' + result1 + result2 + '</div><div><a class="go-home" href="/">clear</a></div>'
 
-    return finalResult
+    return render_template('index.html', data=finalResult)
 
 if __name__ == '__main__':
     app.run()
-
-    

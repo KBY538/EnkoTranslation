@@ -62,23 +62,17 @@
           <input type="text" id="keyword" name="kr_text" required>
             <label for="keyword">한글 검색어를 입력해주세요.</label>
           <span class="btn-area">
-            <button id="button" type="submit">🔍</button>
+            <button id="button" type="submit"><img src="{{ url_for('static', filename='images/background/search.png') }}"></button>
           </span>
         </div>
       </form>
+      {% if data %}
+      {{data|safe}}
+      <script>$('.yellow_p').addClass('show');</script>
+      <script>$('.kr-input').addClass('change1');</script>
+      <script>$('.form-group').addClass('change2');</script>
+      <script>$('.image_section').addClass('change3');</script>
+      {% endif %}
     </section>
-    <script>
-      let btn = $('#button');
-      $(btn).on('click', function(){
-        $('.yellow_p').addClass('show');
-      });
-    </script>
-
-    {% if data %}
-      <div id="result">
-        {% for k, v in data.items() %}<div class="box{{loop.index}}" value="{{k}}">v</div>{% endfor%}
-      </div>
-    {% endif %}
-
   </body>
 </html>
